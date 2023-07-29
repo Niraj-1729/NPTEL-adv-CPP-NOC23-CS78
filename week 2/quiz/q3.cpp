@@ -7,13 +7,11 @@ int main() {
 
     int i;
     const int i1 = 2;
-    const int i2 = i1; // LINE-1: Compilation error due to an invalid variable name (starts with a digit).
+    const int i2 = i1;  
 
-    i2 = X + 5; // LINE-2: Compilation error, attempting to assign a value to a constant.
-
-    i = i1; // LINE-3: No compilation error.
-
-    i1 = 4 + 5; // LINE-4: Compilation error, attempting to assign a value to a constant.
+    i2 = X + 5; 
+    i = i1;  
+    i1 = 4 + 5;  
 
     return 0;
 }
